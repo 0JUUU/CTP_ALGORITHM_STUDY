@@ -3,7 +3,7 @@ using namespace std;
 
 void func2(int arr[], int N)
 {
-	// O(N^2) Ǯ�̹��
+	// O(N^2) 풀이방식
 	for (int i = 0; i < N; i++)
 	{
 		if (arr + i < find(arr, arr + N, 100 - arr[i]) && find(arr, arr + N, 100 - arr[i]) < arr + N)
@@ -15,7 +15,7 @@ void func2(int arr[], int N)
 	cout << 0 << "\n";
 	return;
 
-	// O(N) Ǯ�̹��
+	// O(N) 풀이방식
 }
 int main()
 {
